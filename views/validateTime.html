@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>有效期</title>
+    <link rel="stylesheet" type="text/css" href="less/all.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/validateTime/css/validateTime-min.css">
+    <link rel="stylesheet" type="text/css" href="js/lib/mobiscroll/css/mobiscroll.popup.css">
+</head>
+<body id="J_ValidateTime">
+<input type="hidden" id="dispatcher" value="home">
+<header>有效期demo</header>
+<section class="container">
+    <div class="validate-container">
+        <ul>
+            <li>
+                <label>就诊时间</label><input type="text" id="J_OrderTime" placeholder="请点击选择就诊时间" readonly onfocus="javascript:this.blur();">
+            </li>
+        </ul>
+    </div>
+    <!--设置当天的毫秒数-->
+    <input type="hidden" id="J_CurrentDateMS" value="">
+</section>
+<script src="js/lib/zepto/zepto.min.js" type="text/javascript"></script>
+<script src="js/lib/mobiscroll/js/mobiscroll.zepto.js" type="text/javascript"></script>
+<script src="js/seajs/sea.js?v=1.0.0" data-config="config.js?v=1.0.0" data-main="main.js?v=1.0.0" id="seajsFile"></script>
+</body>
+</html>
